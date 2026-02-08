@@ -1,0 +1,85 @@
+{
+  "kind": "build_request",
+  "title": "Add trendy/aesthetic high-quality clothing imagery (stock/generated) for Girls’ Aesthetic catalog content",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Add a set of high-quality, trendy/aesthetic clothing images as static assets under frontend/public/assets/generated, suitable for a girls’ aesthetic fashion collection and individual product photos.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6",
+          "msg-7"
+        ],
+        "quotes": [
+          "Add high quality pictures of clothes",
+          "Add trendy and asthetic"
+        ]
+      },
+      "acceptanceCriteria": [
+        "New image files exist in frontend/public/assets/generated matching the filenames listed in imageRequirements.required.",
+        "Images are visually consistent (same lighting/grade), high resolution, and appropriate for a modern trendy/aesthetic fashion look.",
+        "All image assets load successfully in the browser (no 404s)."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update the backend catalog seed data for the Girls’ Aesthetic collection and its products to reference the newly added static asset paths in each Collection.imageUrl and Product.imageUrl so the Shop, Collection cards, Product cards, and Product detail gallery display the new trendy/aesthetic images.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-6",
+          "msg-7"
+        ],
+        "quotes": [
+          "Add high quality pictures of clothes",
+          "Add trendy and asthetic"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Girls’ Aesthetic collection record in the backend uses the new collection image asset path for imageUrl.",
+        "Each Girls’ Aesthetic product record in the backend uses a corresponding new product image asset path for imageUrl.",
+        "Shop page collection cards and product grid render the new images for the Girls’ Aesthetic collection/products.",
+        "Product detail page renders the new image for each Girls’ Aesthetic product without broken images."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (read-only).",
+    "Do not edit frontend immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx.",
+    "Backend must remain a single-actor Motoko canister with logic in backend/main.mo; only add a migration file if required by an actual state upgrade need.",
+    "Do not add external image hosting or external databases; use local static assets and store only their paths/URLs in the backend."
+  ],
+  "nonGoals": [
+    "Building an admin UI to upload/manage product images.",
+    "Integrating third-party stock photo APIs or CDNs.",
+    "Adding new authentication providers beyond Internet Identity."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Editorial fashion collection banner with trendy/aesthetic girls clothing styling (girls-aesthetic-collection.dim_1600x900.jpg)",
+      "High-resolution product photo: trendy baby tee laid flat, neutral background (girls-aesthetic-product-01.dim_1200x1500.jpg)",
+      "High-resolution product photo: pleated mini skirt, studio lighting (girls-aesthetic-product-02.dim_1200x1500.jpg)",
+      "High-resolution product photo: cropped hoodie, soft shadows (girls-aesthetic-product-03.dim_1200x1500.jpg)",
+      "High-resolution product photo: ribbed tank top, clean backdrop (girls-aesthetic-product-04.dim_1200x1500.jpg)",
+      "High-resolution product photo: baggy jeans, studio background (girls-aesthetic-product-05.dim_1200x1500.jpg)",
+      "High-resolution product photo: oversized graphic tee, editorial lighting (girls-aesthetic-product-06.dim_1200x1500.jpg)",
+      "High-resolution product photo: knit cardigan, warm tone lighting (girls-aesthetic-product-07.dim_1200x1500.jpg)",
+      "High-resolution product photo: slip dress, minimal studio setting (girls-aesthetic-product-08.dim_1200x1500.jpg)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Prefer a trendy/aesthetic visual direction for the girls’ aesthetic clothing section imagery."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

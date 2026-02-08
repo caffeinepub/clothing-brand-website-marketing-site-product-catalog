@@ -1,0 +1,63 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Girls’ Aesthetic catalog static imagery assets",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Add trendy/aesthetic high-quality Girls’ Aesthetic collection + product images as local static assets under frontend/public/assets/generated.",
+      "acceptanceCriteria": [
+        "New image files exist in frontend/public/assets/generated matching the filenames listed in imageRequirements.required.",
+        "Images are visually consistent (same lighting/grade), high resolution, and appropriate for a modern trendy/aesthetic fashion look.",
+        "All image assets load successfully in the browser (no 404s)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-collection.dim_1600x900.jpg",
+          "operation": "create",
+          "description": "Add static image asset: Editorial fashion collection banner with trendy/aesthetic girls clothing styling. Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-01.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (trendy baby tee laid flat, neutral background). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-02.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (pleated mini skirt, studio lighting). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-03.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (cropped hoodie, soft shadows). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-04.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (ribbed tank top, clean backdrop). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-05.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (baggy jeans, studio background). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-06.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (oversized graphic tee, editorial lighting). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-07.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (knit cardigan, warm tone lighting). Ensure it matches the required filename exactly and is optimized for web delivery."
+        },
+        {
+          "path": "frontend/public/assets/generated/girls-aesthetic-product-08.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add static image asset: High-resolution product photo (slip dress, minimal studio setting). Ensure it matches the required filename exactly and is optimized for web delivery."
+        }
+      ]
+    }
+  ]
+}

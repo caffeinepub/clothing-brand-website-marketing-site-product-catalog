@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Build a clothing brand website.",
+  "architectural_notes": [
+    "Use curated high-quality trendy/aesthetic (girls' aesthetic) clothing imagery for catalog products/collections when user-provided photos are unavailable (e.g., stock images), and ensure they are integrated into the existing product image fields and UI galleries."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Editorial fashion collection banner with trendy/aesthetic girls clothing styling (girls-aesthetic-collection.dim_1600x900.jpg)\n- High-resolution product photo: trendy baby tee laid flat, neutral background (girls-aesthetic-product-01.dim_1200x1500.jpg)\n- High-resolution product photo: pleated mini skirt, studio lighting (girls-aesthetic-product-02.dim_1200x1500.jpg)\n- High-resolution product photo: cropped hoodie, soft shadows (girls-aesthetic-product-03.dim_1200x1500.jpg)\n- High-resolution product photo: ribbed tank top, clean backdrop (girls-aesthetic-product-04.dim_1200x1500.jpg)\n- High-resolution product photo: baggy jeans, studio background (girls-aesthetic-product-05.dim_1200x1500.jpg)\n- High-resolution product photo: oversized graphic tee, editorial lighting (girls-aesthetic-product-06.dim_1200x1500.jpg)\n- High-resolution product photo: knit cardigan, warm tone lighting (girls-aesthetic-product-07.dim_1200x1500.jpg)\n- High-resolution product photo: slip dress, minimal studio setting (girls-aesthetic-product-08.dim_1200x1500.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-clothing-brand-website-frontend-with-core-pages-home-hero-featured-collections-shop-collection-listing-product-detail-about-and-contact",
+      "title": "Create a responsive clothing brand website frontend with core pages: Home (hero + featured collections), Shop/Collection listing, Product detail, About, and Contact.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-and-apply-a-coherent-visual-theme-for-the-brand-across-the-site-colors-typography-spacing-and-component-styling-with-a-distinct-editorial-fashion-look-use-tailwind-styling-consistently-avoid-a-default-unstyled-template-look",
+      "title": "Define and apply a coherent visual theme for the brand across the site (colors, typography, spacing, and component styling) with a distinct editorial/fashion look; use Tailwind styling consistently (avoid a default/unstyled template look).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-wire-the-frontend-shop-collections-and-product-detail-pages-to-the-backend-catalog-apis-using-react-query-loading-empty-and-error-states-included",
+      "title": "Wire the frontend Shop/Collections and Product detail pages to the backend catalog APIs using React Query (loading, empty, and error states included).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-form-name-email-message-that-submits-to-the-backend-and-stores-contact-messages-for-later-review",
+      "title": "Add a Contact form (name, email, message) that submits to the backend and stores contact messages for later review.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-required-generated-brand-imagery-as-static-assets-in-frontend-public-assets-generated-and-render-them-in-the-ui-logo-on-header-footer-hero-visual-on-home-optional-subtle-pattern-texture-background",
+      "title": "Add required generated brand imagery as static assets in frontend/public/assets/generated and render them in the UI (logo on header/footer; hero visual on Home; optional subtle pattern/texture background).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-set-of-high-quality-trendy-aesthetic-clothing-images-as-static-assets-under-frontend-public-assets-generated-suitable-for-a-girls-aesthetic-fashion-collection-and-individual-product-photos",
+      "title": "Add a set of high-quality, trendy/aesthetic clothing images as static assets under frontend/public/assets/generated, suitable for a girls’ aesthetic fashion collection and individual product photos.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a clothing brand website (overall site build).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Implement backend data models and APIs for a simple catalog: Collections and Products (including name, description, price display text, image URL/path, availability/status, tags, and optional variants like sizes/colors).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Seed the app with initial demo content (at least 2 collections and 8+ products) so the site is immediately viewable without manual setup.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add a girls' aesthetic clothing collection/products to the catalog (new collection and matching product entries).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Add a new girls' aesthetic clothing collection and matching product entries to the backend catalog so they appear in the existing Shop page collection filter and product grid.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add high-quality trendy/aesthetic clothing images (stock or generated) for products/collections, especially the girls' aesthetic section, and display them in the product gallery and listings.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Update the backend catalog seed data for the Girls’ Aesthetic collection and its products to reference the newly added static asset paths in each Collection.imageUrl and Product.imageUrl so the Shop, Collection cards, Product cards, and Product detail gallery display the new trendy/aesthetic images.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Clothing brand website (marketing site + product catalog)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

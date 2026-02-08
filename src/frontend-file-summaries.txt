@@ -1,0 +1,19 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup for all pages (Home, Shop, Product detail, About, Contact) wrapped in a shared SiteLayout.",
+  "frontend/src/components/layout/SiteLayout.tsx": "Shared layout wrapper that renders the site header, main content area, and footer for all pages.",
+  "frontend/src/components/layout/SiteHeader.tsx": "Responsive site header with brand wordmark logo and navigation links; includes mobile menu with hamburger toggle.",
+  "frontend/src/components/layout/SiteFooter.tsx": "Site footer with brand mark, navigation links, contact info, and attribution with caffeine.ai link.",
+  "frontend/src/pages/HomePage.tsx": "Homepage featuring hero section with editorial background image, featured collections grid, new arrivals product grid, and brand story teaser.",
+  "frontend/src/pages/ShopPage.tsx": "Shop page with tabbed interface for all products and collections views; includes collection filtering and loading/error states.",
+  "frontend/src/pages/ProductPage.tsx": "Product detail page displaying product image, name, price, description, availability, tags, size/color variants, and back navigation.",
+  "frontend/src/pages/AboutPage.tsx": "About page with editorial brand story content covering philosophy, craftsmanship, sustainability, and vision.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with contact form, success state, customer service hours, and FAQ section.",
+  "frontend/src/components/catalog/ProductCard.tsx": "Reusable product card component displaying product image, name, price, availability badge, and tags with hover effects.",
+  "frontend/src/components/catalog/CollectionCard.tsx": "Reusable collection card component displaying collection image, name, description, and explore button.",
+  "frontend/src/components/contact/ContactForm.tsx": "Contact form with validation for name, email, and message fields; handles submission with loading and error states.",
+  "frontend/src/hooks/useCatalogQueries.ts": "React Query hooks for fetching collections, products, products by collection, single product, and single collection from backend.",
+  "frontend/src/hooks/useContactMutation.ts": "React Query mutation hook for submitting contact messages to backend with timestamp conversion.",
+  "frontend/src/index.css": "Global styles with OKLCH-based neutral/warm color palette for editorial fashion aesthetic; includes subtle fabric texture overlay and typography refinements.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended font families, letter spacing, and custom shadows to support the editorial design system.",
+  "frontend/src/components/ui/README-do-not-edit.txt": "Developer guidance file explaining that UI component files are read-only and should be composed rather than modified."
+}
